@@ -7,21 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		803C812EDD13AF265F3398E8 /* Pods_RNDM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73728F8CAD581527B053A383 /* Pods_RNDM.framework */; };
 		A5026A20215092EE004C07BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026A1F215092EE004C07BD /* AppDelegate.swift */; };
-		A5026A22215092EE004C07BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026A21215092EE004C07BD /* ViewController.swift */; };
+		A5026A22215092EE004C07BD /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5026A21215092EE004C07BD /* MainVC.swift */; };
 		A5026A25215092EE004C07BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5026A23215092EE004C07BD /* Main.storyboard */; };
 		A5026A27215092EF004C07BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5026A26215092EF004C07BD /* Assets.xcassets */; };
 		A5026A2A215092EF004C07BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5026A28215092EF004C07BD /* LaunchScreen.storyboard */; };
+		A5026A322150943F004C07BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5026A312150943F004C07BD /* GoogleService-Info.plist */; };
+		A508E4D12157F9B600BAB894 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A508E4D02157F9B600BAB894 /* LoginVC.swift */; };
+		A508E4D32157FBA800BAB894 /* CreateUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A508E4D22157FBA800BAB894 /* CreateUserVC.swift */; };
+		A556900621509DD000922BEB /* AddThoughtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A556900521509DD000922BEB /* AddThoughtVC.swift */; };
+		A583690D2151E8A80082ADB7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583690C2151E8A80082ADB7 /* Constants.swift */; };
+		A5EA383221541B4F0072EF03 /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EA383121541B4F0072EF03 /* Thought.swift */; };
+		A5EA383421541C9D0072EF03 /* thoughtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EA383321541C9D0072EF03 /* thoughtCell.swift */; };
+		A5EB5011215812C8002C9E53 /* CommentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EB5010215812C8002C9E53 /* CommentsVC.swift */; };
+		A5EB50132158166F002C9E53 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EB50122158166F002C9E53 /* CommentCell.swift */; };
+		A5EB5015215817CC002C9E53 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EB5014215817CC002C9E53 /* Comment.swift */; };
+		A5EB5017215833E2002C9E53 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EB5016215833E2002C9E53 /* KeyboardBoundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F24E69DE7DE6E50EC2D6836 /* Pods-RNDM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDM.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNDM/Pods-RNDM.release.xcconfig"; sourceTree = "<group>"; };
+		609BBBE109F4E0482F2241A2 /* Pods-RNDM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNDM/Pods-RNDM.debug.xcconfig"; sourceTree = "<group>"; };
+		73728F8CAD581527B053A383 /* Pods_RNDM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNDM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5026A1C215092EE004C07BD /* RNDM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNDM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5026A1F215092EE004C07BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5026A21215092EE004C07BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5026A21215092EE004C07BD /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		A5026A24215092EE004C07BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5026A26215092EF004C07BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5026A29215092EF004C07BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5026A2B215092EF004C07BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5026A312150943F004C07BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A508E4D02157F9B600BAB894 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		A508E4D22157FBA800BAB894 /* CreateUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserVC.swift; sourceTree = "<group>"; };
+		A556900521509DD000922BEB /* AddThoughtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddThoughtVC.swift; sourceTree = "<group>"; };
+		A583690C2151E8A80082ADB7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A5EA383121541B4F0072EF03 /* Thought.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thought.swift; sourceTree = "<group>"; };
+		A5EA383321541C9D0072EF03 /* thoughtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thoughtCell.swift; sourceTree = "<group>"; };
+		A5EB5010215812C8002C9E53 /* CommentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsVC.swift; sourceTree = "<group>"; };
+		A5EB50122158166F002C9E53 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		A5EB5014215817CC002C9E53 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		A5EB5016215833E2002C9E53 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +55,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				803C812EDD13AF265F3398E8 /* Pods_RNDM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6DA581796163534C8A379C54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73728F8CAD581527B053A383 /* Pods_RNDM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		918CA82A0C0CFBD780D2634B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				609BBBE109F4E0482F2241A2 /* Pods-RNDM.debug.xcconfig */,
+				2F24E69DE7DE6E50EC2D6836 /* Pods-RNDM.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A5026A13215092EE004C07BD = {
 			isa = PBXGroup;
 			children = (
 				A5026A1E215092EE004C07BD /* RNDM */,
 				A5026A1D215092EE004C07BD /* Products */,
+				918CA82A0C0CFBD780D2634B /* Pods */,
+				6DA581796163534C8A379C54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +100,57 @@
 		A5026A1E215092EE004C07BD /* RNDM */ = {
 			isa = PBXGroup;
 			children = (
+				A583690B2151E8960082ADB7 /* Utilities */,
+				A556900921509DF500922BEB /* Model */,
+				A556900821509DF000922BEB /* View */,
+				A556900721509DE100922BEB /* Controller */,
 				A5026A1F215092EE004C07BD /* AppDelegate.swift */,
-				A5026A21215092EE004C07BD /* ViewController.swift */,
 				A5026A23215092EE004C07BD /* Main.storyboard */,
 				A5026A26215092EF004C07BD /* Assets.xcassets */,
 				A5026A28215092EF004C07BD /* LaunchScreen.storyboard */,
 				A5026A2B215092EF004C07BD /* Info.plist */,
+				A5026A312150943F004C07BD /* GoogleService-Info.plist */,
 			);
 			path = RNDM;
+			sourceTree = "<group>";
+		};
+		A556900721509DE100922BEB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A5026A21215092EE004C07BD /* MainVC.swift */,
+				A556900521509DD000922BEB /* AddThoughtVC.swift */,
+				A508E4D02157F9B600BAB894 /* LoginVC.swift */,
+				A508E4D22157FBA800BAB894 /* CreateUserVC.swift */,
+				A5EB5010215812C8002C9E53 /* CommentsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A556900821509DF000922BEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5EA383321541C9D0072EF03 /* thoughtCell.swift */,
+				A5EB50122158166F002C9E53 /* CommentCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A556900921509DF500922BEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A5EA383121541B4F0072EF03 /* Thought.swift */,
+				A5EB5014215817CC002C9E53 /* Comment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A583690B2151E8960082ADB7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A583690C2151E8A80082ADB7 /* Constants.swift */,
+				A5EB5016215833E2002C9E53 /* KeyboardBoundView.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5026A2E215092EF004C07BD /* Build configuration list for PBXNativeTarget "RNDM" */;
 			buildPhases = (
+				1E1096C383C49FB00825D6AC /* [CP] Check Pods Manifest.lock */,
 				A5026A18215092EE004C07BD /* Sources */,
 				A5026A19215092EE004C07BD /* Frameworks */,
 				A5026A1A215092EE004C07BD /* Resources */,
+				42B5E3AF466B0A194963772E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,18 +216,86 @@
 				A5026A2A215092EF004C07BD /* LaunchScreen.storyboard in Resources */,
 				A5026A27215092EF004C07BD /* Assets.xcassets in Resources */,
 				A5026A25215092EE004C07BD /* Main.storyboard in Resources */,
+				A5026A322150943F004C07BD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E1096C383C49FB00825D6AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNDM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42B5E3AF466B0A194963772E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RNDM/Pods-RNDM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNDM/Pods-RNDM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A5026A18215092EE004C07BD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5026A22215092EE004C07BD /* ViewController.swift in Sources */,
+				A556900621509DD000922BEB /* AddThoughtVC.swift in Sources */,
+				A508E4D32157FBA800BAB894 /* CreateUserVC.swift in Sources */,
+				A5EB5017215833E2002C9E53 /* KeyboardBoundView.swift in Sources */,
+				A5EA383421541C9D0072EF03 /* thoughtCell.swift in Sources */,
+				A508E4D12157F9B600BAB894 /* LoginVC.swift in Sources */,
+				A5EA383221541B4F0072EF03 /* Thought.swift in Sources */,
+				A5EB50132158166F002C9E53 /* CommentCell.swift in Sources */,
+				A5026A22215092EE004C07BD /* MainVC.swift in Sources */,
 				A5026A20215092EE004C07BD /* AppDelegate.swift in Sources */,
+				A583690D2151E8A80082ADB7 /* Constants.swift in Sources */,
+				A5EB5015215817CC002C9E53 /* Comment.swift in Sources */,
+				A5EB5011215812C8002C9E53 /* CommentsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +437,7 @@
 		};
 		A5026A2F215092EF004C07BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 609BBBE109F4E0482F2241A2 /* Pods-RNDM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,12 +450,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.developedbygjoraas.RNDM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		A5026A30215092EF004C07BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F24E69DE7DE6E50EC2D6836 /* Pods-RNDM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,7 +469,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.developedbygjoraas.RNDM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
