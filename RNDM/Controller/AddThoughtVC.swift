@@ -14,16 +14,12 @@ class AddThoughtVC: UIViewController, UITextViewDelegate {
     // Outlets
     
     @IBOutlet private weak var categorySegment: UISegmentedControl!
-    @IBOutlet private weak var userNameTxt: UITextField!
     @IBOutlet private weak var thoughtTxt: UITextView!
     @IBOutlet private weak var postBtn: UIButton!
     
     // Variables
     
     private var selecteCategory = ThoughtCategory.funny.rawValue
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,14 +39,13 @@ class AddThoughtVC: UIViewController, UITextViewDelegate {
     
     
     @IBAction func postBtnTapped(_ sender: Any) {
-        guard let userName = userNameTxt.text else { return }
         Firestore.firestore().collection(THOUGHTS_REF).addDocument(data:
             [ CATEGORY: selecteCategory,
               NUM_COMMENTS : 0,
               NUM_LIKES : 0,
               THOUGHT_TXT : thoughtTxt.text,
               TIMESTAMP : FieldValue.serverTimestamp(),
-              USERNAME : userName,
+              USERNAME : Auth.auth().currentUser?.displayName ?? "",
               USER_ID: Auth.auth().currentUser?.uid ?? ""
             ])
         { (err) in

@@ -22,12 +22,7 @@ enum ThoughtCategory: String{
 
 class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate, ThoughtDelegate {
     
-    func thoughtOptionsTapped(thought: Thought) {
-        // this is where we create the alert to handle the deletion.
-        print(thought.username)
-    }
-    
-    
+
     // Outlets
     @IBOutlet private weak var segmentControl: UISegmentedControl!
     @IBOutlet private weak var tableView: UITableView!
@@ -64,6 +59,60 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Thou
     override func viewDidDisappear(_ animated: Bool) {
         if thoughtsListener != nil {
             thoughtsListener.remove()
+        }
+    }
+    
+    func thoughtOptionsTapped(thought: Thought) {
+        let alert = UIAlertController(title: "Delete", message: "Do you want to delete your thought?", preferredStyle: .actionSheet)
+        let deleteAction = UIAlertAction(title: "Delete Thought", style: .default) { (action) in
+            // delete thought
+            
+            self.delete(collection: Firestore.firestore().collection(THOUGHTS_REF).document(thought.documentID).collection(COMMENTS_REF), completion: { (error) in
+                if let error = error {
+                    debugPrint("unable to delete thought")
+                } else {
+                    Firestore.firestore().collection(THOUGHTS_REF).document(thought.documentID)
+                        .delete(completion: { (error) in
+                            if let error = error {
+                                debugPrint("Could not delete thought: \(error.localizedDescription)")
+                            } else {
+                                alert.dismiss(animated: true, completion: nil)
+                            }
+                        })
+                }
+            })
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alert.addAction(deleteAction)
+        alert.addAction(cancelAction)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func delete(collection: CollectionReference, batchSize: Int = 100, completion: @escaping (Error?) -> ()) {
+        // Limit query to avoid out-of-memory errors on large collections.
+        // When deleting a collection guaranteed to fit in memory, batching can be avoided entirely.
+        collection.limit(to: batchSize).getDocuments { (docset, error) in
+            // An error occurred.
+            guard let docset = docset else {
+                completion(error)
+                return
+            }
+            
+            guard docset.count > 0 else {
+                completion(nil)
+                return
+            }
+            
+            let batch = collection.firestore.batch()
+            docset.documents.forEach { batch.deleteDocument($0.reference) }
+            
+            batch.commit(completion: { (batchError) in
+                if let batchError = batchError {
+                    completion(batchError)
+                } else {
+                    self.delete(collection: collection, batchSize: batchSize, completion: completion)
+                }
+            })
         }
     }
     
